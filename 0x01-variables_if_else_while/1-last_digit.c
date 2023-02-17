@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - main block
  * Description: Print statements based on the last digit of the random number.
  * Return: 0
-*/
+ */
 int main(void)
 {
 	int n;
@@ -16,13 +15,14 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	la = n % 10;
 
-	if (m > 5)
+	if (la > 5)
 		printf("Last digit of %i is %i and is greater than 5\n",
-		       n, m);
-	else if (m == 0)
-		printf("Last digit of %i is %i and is 0\n", n, m);
+		       n, la);
+	else if (la == 0)
+		printf("Last digit of %i is %i and is 0\n", n, la);
 	else
 		printf("Last digit of %i is %i and is less than 6 and not 0\n",
-		       n, m);
+		       n, la);
+
 	return (0);
 }
