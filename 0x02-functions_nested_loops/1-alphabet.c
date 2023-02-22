@@ -5,6 +5,7 @@
  *
  * return: nothing
  */
+
 void print_alphabet(void)
 {
 	int i = 'a';
