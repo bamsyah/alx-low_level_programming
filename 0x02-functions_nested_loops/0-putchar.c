@@ -10,7 +10,7 @@ int main(void)
 	char p[] = "_putchar";
 
 	i = 0;
-	while (c[i])
+	while (p[i])
 	{
 		_putchar(p[i]);
 		i++;
